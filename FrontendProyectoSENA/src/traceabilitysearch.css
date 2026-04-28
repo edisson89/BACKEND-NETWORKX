@@ -1,0 +1,59 @@
+/* Contenedor del módulo de búsqueda */
+.search-module {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px dashed #cbd5e1;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.search-module label {
+  display: block;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* Grupo de Input y Botón */
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #2980b9;
+}
+
+.btn-search {
+  background: #1e293b;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.btn-search:hover {
+  opacity: 0.9;
+}
+
+/* Texto pequeño inferior */
+.search-module small {
+  display: block;
+  margin-top: 10px;
+  color: #64748b;
+  font-style: italic;
+}

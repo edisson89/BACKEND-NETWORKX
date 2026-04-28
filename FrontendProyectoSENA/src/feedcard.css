@@ -1,0 +1,79 @@
+/* Contenedor principal de la tarjeta */
+.card-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  border: 1px solid #eef2f3;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Cabecera: Nombre y Precio */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.price-tag {
+  background: #27ae60;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin: 8px 0;
+}
+
+/* Footer: Badges y Botón */
+.card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  background: #f1f4f6;
+  color: #34495e;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-direct-contact {
+  width: 100%;
+  background: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn-direct-contact:hover {
+  background: #1f6391;
+}
