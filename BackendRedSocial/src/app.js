@@ -18,6 +18,7 @@ mongoose
 var indexRouter = require("./routes/index")
 var usersRouter = require("./routes/users")
 const authRoutes = require("./routes/authRoutes")
+const productRoutes = require("./routes/productRoutes")
 
 var app = express()
 
@@ -31,7 +32,7 @@ app.set("view engine", "jade")
 // Configuración más segura para producción (puedes ajustar el origin a la URL de tu frontend)
 app.use(
 	cors({
-		origin: "*",
+		origin: "http://localhost:5173",
 		methods: ["GET", "POST", "PUT", "DELETE"],
 		allowedHeaders: ["Content-Type", "Authorization"],
 	}),
@@ -47,6 +48,7 @@ app.use(express.static(path.join(__dirname, "public")))
 
 // API Routes
 app.use("/api/auth", authRoutes)
+app.use("/api/products", productRoutes)
 
 // View Routes
 app.use("/", indexRouter)

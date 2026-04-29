@@ -1,9 +1,10 @@
 /* Contenedor principal de la tarjeta */
 .card-container {
-  background: #ffffff;
+  background: #e9f1f4;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  margin: 2%;
   max-width: 350px;
   transition: transform 0.3s ease;
   border: 1px solid #eef2f3;
